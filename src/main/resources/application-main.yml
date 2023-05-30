@@ -1,0 +1,10 @@
+spring:
+  config:
+    activate:
+      on-profile: main
+  sql:
+    init.mode: always
+  jpa:
+    defer-datasource-initialization: true
+    hibernate:
+      ddl-auto: update
