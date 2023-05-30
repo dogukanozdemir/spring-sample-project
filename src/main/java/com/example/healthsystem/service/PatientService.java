@@ -62,6 +62,7 @@ public class PatientService {
                 .build();
         Patient savedPatient = patientRepository.save(patient);
         return PatientDTO.builder()
+                .id(savedPatient.getId())
                 .name(savedPatient.getName())
                 .age(savedPatient.getAge())
                 .bmi(savedPatient.getBmi())
